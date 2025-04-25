@@ -178,6 +178,7 @@ export const SidenavLayout: ParentComponent<{
   sideNav: Component;
   showSearch?: boolean;
 }> = (props) => {
+  const { t } = useI18n();
   const themeStore = useThemeStore();
   const params = useParams();
   const { openCommandPalette } = useCommandPalette();
@@ -209,7 +210,7 @@ export const SidenavLayout: ParentComponent<{
             {(props.showSearch ?? true) && (
               <Button variant="outline" class="lg:min-w-64  justify-start" onClick={openCommandPalette}>
                 <div class="i-tabler-search size-4 mr-2"></div>
-                Search...
+                { t('layout.sidenav.search') }
               </Button>
             )}
           </div>
@@ -219,7 +220,7 @@ export const SidenavLayout: ParentComponent<{
             <Button onClick={promptImport}>
               <div class="i-tabler-upload size-4"></div>
               <span class="hidden sm:inline ml-2">
-                Import a document
+                { t('layout.sidenav.import-document') }
               </span>
             </Button>
 
@@ -240,18 +241,18 @@ export const SidenavLayout: ParentComponent<{
               <DropdownMenuContent class="w-42">
                 <DropdownMenuItem class="flex items-center gap-2 cursor-pointer" as={A} href="/settings">
                   <div class="i-tabler-settings size-4 text-muted-foreground"></div>
-                  Account settings
+                  { t('layout.sidenav.account-settings') }
                 </DropdownMenuItem>
 
                 <DropdownMenuItem class="flex items-center gap-2 cursor-pointer" as={A} href="/api-keys">
                   <div class="i-tabler-key size-4 text-muted-foreground"></div>
-                  API keys
+                  { t('layout.sidenav.api-keys') }
                 </DropdownMenuItem>
 
                 <DropdownMenuSub>
                   <DropdownMenuSubTrigger class="flex items-center gap-2 cursor-pointer">
                     <div class="i-tabler-language size-4 text-muted-foreground"></div>
-                    Language
+                    { t('layout.sidenav.language') }
                   </DropdownMenuSubTrigger>
 
                   <DropdownMenuSubContent>
@@ -267,7 +268,7 @@ export const SidenavLayout: ParentComponent<{
                   class="flex items-center gap-2 cursor-pointer"
                 >
                   <div class="i-tabler-logout size-4 text-muted-foreground"></div>
-                  Logout
+                  { t('layout.sidenav.logout') }
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

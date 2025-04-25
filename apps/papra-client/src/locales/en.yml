@@ -87,6 +87,12 @@ layout.menu.account: Account
 layout.sidenav.all-organizations: All organizations
 layout.sidenav.github-repository: GitHub repository
 layout.sidenav.bluesky: Bluesky
+layout.sidenav.search: Search...
+layout.sidenav.import-document: Import a document
+layout.sidenav.account-settings: Account settings
+layout.sidenav.api-keys: API keys
+layout.sidenav.language: Language
+layout.sidenav.logout: Logout
 
 tagging-rules.field.name: document name
 tagging-rules.field.content: document content
