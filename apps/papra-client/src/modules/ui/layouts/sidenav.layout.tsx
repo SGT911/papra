@@ -42,21 +42,22 @@ export const SideNav: Component<{
   header?: Component;
   footer?: Component;
 }> = (props) => {
+  const { t } = useI18n();
   const { config } = useConfig();
 
   const getShortSideNavItems = () => [
     {
-      label: 'All organizations',
+      label: t('layout.sidenav.all-organizations'),
       to: '/organizations',
       icon: 'i-tabler-building-community',
     },
     {
-      label: 'GitHub repository',
+      label: t('layout.sidenav.github-repository'),
       href: 'https://github.com/papra-hq/papra',
       icon: 'i-tabler-brand-github',
     },
     {
-      label: 'Bluesky',
+      label: t('layout.sidenav.github-repository'),
       href: 'https://bsky.app/profile/papra.app',
       icon: 'i-tabler-brand-bluesky',
     },

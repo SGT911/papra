@@ -84,6 +84,10 @@ layout.menu.api-keys: Claves API
 layout.menu.settings: Configuración
 layout.menu.account: Cuenta
 
+layout.sidenav.all-organizations: Todas las organizaciones
+layout.sidenav.github-repository: Repositorio GitHub
+layout.sidenav.bluesky: Bluesky
+
 tagging-rules.field.name: nombre del documento
 tagging-rules.field.content: contenido del documento
 tagging-rules.operator.equals: igual a
